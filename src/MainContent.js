@@ -32,17 +32,32 @@ const MainContent = () => {
           alt={`Image ${currentSlide + 1}`}
           className="slide"
      />
-          <button  className='back-button' onClick={prevSlide}> <FaAnglesLeft /> </button>
-          <button className='front-button' onClick={nextSlide}> <FaAnglesRight /> </button>
+      <button  className='back-button' onClick={prevSlide}> <FaAnglesLeft /> </button>
+      <button className='front-button' onClick={nextSlide}> <FaAnglesRight /> </button>
 
        <h2>
           stay in touch
-      </h2>
+       </h2>
 
       <h3>
         booking available for latest car festa 
       </h3>
-    
+
+ <div className='inputs'>
+        <h2>
+          <input type="email" 
+                 name="mail"
+                 placeholder='Email id'  
+                 required   
+          />
+
+          <button>
+                Get start
+          </button>
+         
+       </h2>
+          
+ </div>
 </div>
 
  
