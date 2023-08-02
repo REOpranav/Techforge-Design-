@@ -82,7 +82,10 @@ li:hover{
    border: none;
  }
 
- .main button:hover{
+ .back-button:hover{
+    filter: drop-shadow(1px 1px 10px white);
+ }
+ .front-button:hover{
     filter: drop-shadow(1px 1px 10px white);
  }
 
@@ -121,10 +124,9 @@ li:hover{
    padding: 6px;
    backdrop-filter: blur(100px);
    letter-spacing: 1px;
-  
  }
 
- .contact{
+.contact{
   height: 125vh;
   padding: 40px; 
 }
@@ -137,7 +139,6 @@ li:hover{
     font-family: 'REM', sans-serif;
     letter-spacing: 1px ;
     word-spacing: 1px;    
-
 }
 
 /* code for h2 */
@@ -185,4 +186,48 @@ li:hover{
   width: 70px;
   margin-right: 6rem;
   margin-top: 4rem;
+}
+
+/* code for  input [ js code in main constent ]*/
+
+input {
+    margin-top: 13rem;
+    padding: 10px;
+    width: 120%;
+    margin-left: 0.7rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    color: white;
+}
+
+input:hover{
+    backdrop-filter: blur(10px);
+}
+
+input:active{
+  background-color: #333;
+}
+
+
+.inputs button{
+    position:absolute;
+    margin-top:-2.7rem;
+    margin-left:23rem;
+    width: 10rem;
+    background-color: transparent;
+    border: none;
+    border: 1px solid white;
+    font-size: 18px;
+    color: white;
+       
+}
+
+.inputs button:hover{
+   backdrop-filter: blur(20px);
+}
+.inputs button:active {
+  background-color: #333;
+  color: white;
 }
