@@ -24,6 +24,11 @@ const MainContent = () => {
     const nextSlide = () => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
     };
+
+  setTimeout(() => {
+      nextSlide()
+  }, 5000);
+
   return (
 
     <div className='main'>

@@ -68,6 +68,8 @@ li:hover{
   height:100%;
   position:absolute;
   filter: blur(6px);
+  animation: slider 9s infinite linear
+
 }
 
 .main button{
@@ -80,6 +82,7 @@ li:hover{
    color: white;
    font-size:xx-large;
    border: none;
+
  }
 
  .back-button:hover{
@@ -209,7 +212,6 @@ input:hover{
 input:active{
   background-color: #333;
 }
-
 
 .inputs button{
     position:absolute;
