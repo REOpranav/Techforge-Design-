@@ -6,18 +6,10 @@ import { useEffect, useState } from 'react';
 
 function App() {
  
- 
-   const handleSubmit = (e)=>{
-      e.preventDefault()
-      setInput('')
-   } 
-
   return (
     <div>
        <Subheader />
-       <MainContent 
-          handleSubmit={handleSubmit}
-       />
+       <MainContent        />
        <Contact />
     </div> 
   );

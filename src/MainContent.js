@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { FaAnglesLeft,FaAnglesRight } from "react-icons/fa6";
 
-const MainContent = ({handleSubmit}) => {
+const MainContent = () => {
 
   const images = [
     'https://cdn.pixabay.com/photo/2015/10/01/19/05/car-967470_640.png',
