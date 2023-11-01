@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { FaAnglesLeft,FaAnglesRight } from "react-icons/fa6";
 
-const MainContent = () => {
+const MainContent = ({handleSubmit,input,setInput}) => {
 
   const images = [
     'https://cdn.pixabay.com/photo/2015/10/01/19/05/car-967470_640.png',
@@ -49,17 +49,21 @@ const MainContent = () => {
       </h3>
 
  <div className='inputs'>
+  
         <h2>
-          <input type="email" 
-                 name="mail"
-                 placeholder='Email id'  
-                 required   
-          />
+            <form onSubmit={handleSubmit}>
+                <input type="email" 
+                       name="mail"
+                       placeholder='Email id'  
+                       required   
+                       value = {input}
+                       setInput  = {(e)=>{setInput(e.target.value)}}
+                />
 
-          <button>
-                Get start
-          </button>
-         
+                <button >
+                      Get start
+                </button>
+            </form>
        </h2>
           
  </div>
