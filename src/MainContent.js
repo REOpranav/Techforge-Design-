@@ -56,7 +56,6 @@ const MainContent = ({handleSubmit,input,setInput}) => {
                        name="mail"
                        placeholder='Email id'  
                        required   
-                       value = {input}
                        onChange  = {(e)=>{setInput(e.target.value)}}
                 />
 
