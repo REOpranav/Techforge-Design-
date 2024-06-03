@@ -14,20 +14,17 @@ const MainContent = () => {
     'https://img.freepik.com/free-photo/shiny-sports-car-races-through-cityscape-generated-by-ai_188544-19617.jpg?size=626&ext=jpg&ga=GA1.1.525609212.1690119469&semt=sph',
   ];
   
-  
     const [currentSlide, setCurrentSlide] = useState(0);
   
     const prevSlide = () => {
-      setCurrentSlide((prevSlide) => (prevSlide - 1 + images.length) % images.length);
+      setCurrentSlide((prevSlide) => (prevSlide - 1 + images.length ) % images.length);
+      
     };
   
     const nextSlide = () => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
     };
-
-  setTimeout(() => {
-      nextSlide()
-  }, 5000);
+    
 
   return (
 
@@ -57,10 +54,6 @@ const MainContent = () => {
                        placeholder='Email id'  
                        required   
                 />
-
-                <button >
-                      Get start
-                </button>
             </form>
        </h2>
           
